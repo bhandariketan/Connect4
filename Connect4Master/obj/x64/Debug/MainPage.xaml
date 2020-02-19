@@ -1,0 +1,96 @@
+﻿<Page
+    x:Class="Connect4Master.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Connect4Master"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        
+    
+
+        <Border Background="White">
+            <Grid x:ConnectionId='15' x:Name="myGrid" >
+                
+
+            </Grid>
+
+        </Border>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Border x:ConnectionId='8' x:Name="Bu1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="0"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="White"                     >
+                <TextBlock Grid.Row="0"  Text="Row1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+            <Border x:ConnectionId='9' x:Name="Bu2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="1"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="White"                     >
+                <TextBlock Grid.Row="0"  Text="Row2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+            <Border x:ConnectionId='10' x:Name="Bu3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="2"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="White"                     >
+                <TextBlock Grid.Row="0"  Text="Row3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+            <Border x:ConnectionId='11' x:Name="Bu4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="3"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="White"                     >
+                <TextBlock Grid.Row="0"  Text="Row4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+            <Border x:ConnectionId='12' x:Name="Bu5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="4"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="White"                     >
+                <TextBlock Grid.Row="0"  Text="Row5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+            <Border x:ConnectionId='13' x:Name="Bu6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="5"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="White"                     >
+                <TextBlock Grid.Row="0"  Text="Row6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+            <Border x:ConnectionId='14' x:Name="Bu7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="6"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="White"                     >
+                <TextBlock Grid.Row="0"  Text="Row7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Border x:ConnectionId='2' x:Name="player1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="0"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="CornflowerBlue"                           >
+                <TextBlock x:ConnectionId='7' x:Name="Player1Lbl" Grid.Row="0"  Text="Player 1 score" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+
+            <Border x:ConnectionId='3' x:Name="playerTurn" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="1"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="LightGray" >
+                <TextBlock x:ConnectionId='6' x:Name="playerTurnLbl" Grid.Row="0"  Text="Whos turn?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+            <Border x:ConnectionId='4' x:Name="player2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="2"  BorderThickness="0" BorderBrush="Black" Margin="10" Background="IndianRed"                           >
+                <TextBlock x:ConnectionId='5' x:Name="player2Lbl" Grid.Row="0"  Text="Player 2 score" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Margin="0,0,0,0" RequestedTheme="Default"  />
+            </Border>
+
+        </Grid>
+        
+
+        
+    </Grid>
+</Page>
+
